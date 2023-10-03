@@ -1,0 +1,19 @@
+h1 {
+    font-size: 200px;
+    letter-spacing: 150px;
+    margin: auto;
+    color: #cf02e3;
+    font-family: monospace;
+    transform: translateY(100%); /* Déplacez le titre en bas de la page */
+    transition: transform 1s ease, opacity 1s ease; /* Ajoutez des transitions pour l'animation de translation et d'opacité */
+    opacity: 0; /* Masquez le titre initialement */
+}
+
+body.loaded h1 {
+    transform: translateY(0); /* Remettez le titre à sa position d'origine */
+    opacity: 1; /* Rendez le titre visible */
+}
+
+.hidden {
+    visibility: hidden; /* Cachez le titre */
+}

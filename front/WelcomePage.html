@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site internet</title>
+    <link href="HelloPagestyle.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div id="TitleWelcome">
+        <h1 id="animatedTitle" class="hidden">
+            Hello
+        </h1>
+    </div>
+</body>
+<script>
+    window.addEventListener("load", function() {
+        document.body.classList.add("loaded");
+        document.querySelector("#animatedTitle").classList.remove("hidden");
+    });
+</script>
+
+
+</html>

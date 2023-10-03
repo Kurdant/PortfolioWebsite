@@ -2,23 +2,25 @@
     
       const firstPages = document.querySelector("#first-pages");
       firstPages.classList.add("available");
-      
       const secondPages = document.querySelector("#FormPrenom");
       secondPages.classList.add("hide");
+      const FormName = document.querySelector("PrenomFormular")
       
       /* affichage désaffichage */
 
       firstPages.addEventListener("click", () => {
-        firstPages.classList.add("hide");
-        setTimeout(() => {
-          firstPages.style.display = "none";
+        // firstPages.classList.add("hide");
+        // setTimeout(() => {
+        //   firstPages.style.display = "none";
       
-          secondPages.classList.add("available");
-          secondPages.classList.remove("hide");
-        }, 500);
+        //   secondPages.classList.add("available");
+        //   secondPages.classList.remove("hide");
+        // }, 500);
+        window.location.href = "./WelcomePage.html";
       });
       
-  
+
+      
   
   window.addEventListener("load", async () => {
     /*!
